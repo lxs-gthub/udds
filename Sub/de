@@ -1,0 +1,18 @@
+     string temp = "";
+ 52     MD5 test;
+ 53     for (i = 0; i < data_seq.length(); ++i) {
+ 54         
+ 55         temp =test.encode(data_seq[i].ch);
+ 56         bool flag = strcmp(temp.c_str(),data_seq[i].md5);
+ 57         if(flag != 0)
+ 58         {
+ 59             cout<<"data error"<<endl;
+ 60             cout<<temp<<endl;
+ 61         }
+ 62 
+ 63         else
+ 64         {
+ 65             cout<<data_seq[i].md5<<endl;
+ 66         }
+ 67     }
+
